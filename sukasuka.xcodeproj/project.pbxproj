@@ -21,6 +21,7 @@
 		4AEF62F117CE0AA100F440A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEF62D217CE0AA100F440A7 /* Foundation.framework */; };
 		4AEF62F917CE0AA200F440A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF62F717CE0AA200F440A7 /* InfoPlist.strings */; };
 		4AEF62FC17CE0AA200F440A7 /* sukasukaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF62FB17CE0AA200F440A7 /* sukasukaTests.m */; };
+		4AEF630717CE0BF400F440A7 /* sukasukaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF630617CE0BF400F440A7 /* sukasukaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4AEF62F817CE0AA200F440A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AEF62FA17CE0AA200F440A7 /* sukasukaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sukasukaTests.h; sourceTree = "<group>"; };
 		4AEF62FB17CE0AA200F440A7 /* sukasukaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sukasukaTests.m; sourceTree = "<group>"; };
+		4AEF630517CE0BF400F440A7 /* sukasukaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sukasukaViewController.h; sourceTree = "<group>"; };
+		4AEF630617CE0BF400F440A7 /* sukasukaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sukasukaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		4AEF62D717CE0AA100F440A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4AEF630517CE0BF400F440A7 /* sukasukaViewController.h */,
+				4AEF630617CE0BF400F440A7 /* sukasukaViewController.m */,
 				4AEF62D817CE0AA100F440A7 /* sukasuka-Info.plist */,
 				4AEF62D917CE0AA100F440A7 /* InfoPlist.strings */,
 				4AEF62DC17CE0AA100F440A7 /* main.m */,
@@ -263,6 +268,7 @@
 			files = (
 				4AEF62DD17CE0AA100F440A7 /* main.m in Sources */,
 				4AEF62E117CE0AA100F440A7 /* AppDelegate.m in Sources */,
+				4AEF630717CE0BF400F440A7 /* sukasukaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +372,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sukasuka/sukasuka-Prefix.pch";
 				INFOPLIST_FILE = "sukasuka/sukasuka-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -377,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sukasuka/sukasuka-Prefix.pch";
 				INFOPLIST_FILE = "sukasuka/sukasuka-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
