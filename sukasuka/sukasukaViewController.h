@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sukasukaViewController : UIViewController
+@interface sukasukaViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *main_tableview;
+    NSMutableArray *netra_array;
 }
 
 @end
