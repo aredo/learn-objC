@@ -7,8 +7,9 @@
 //
 
 #import "sukasukaViewController.h"
-
+#import "netraCell.h"
 #import "netra.h"
+#import "details.h"
 
 @interface sukasukaViewController ()
 
@@ -94,16 +95,31 @@
     
     netra *kacrut=[netra_array objectAtIndex:indexPath.row];
     
-	UITableViewCell *Cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"vanbungkring"];
+	netraCell *Cell=[[netraCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"vanbungkring"];
 	if (Cell == nil)
 	{
-		Cell= [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
+		Cell= [[netraCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
 		//cell=[[[NetraCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier ]autorelease];
 	}
-	Cell.textLabel.text=kacrut.title;
+	Cell.title.text=kacrut.title;
+	Cell.excerpt.text=kacrut.excerpt;
+	NSURL *dafuq=[NSURL URLWithString:kacrut.thumbnail];
+	[Cell.imageView setImageWithURL:dafuq placeholderImage:nil];
 	return Cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+	netra *kacrut=[netra_array objectAtIndex:indexPath.row];
+	details *window_detaails=[[details alloc]init];
+	window_detaails.title=kacrut.title;
+	window_detaails.url=kacrut.url;
+	[self.navigationController pushViewController:window_detaails animated:YES];
+	
+	
+	
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+	return 70;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -12,6 +12,9 @@
 
 @property(nonatomic,strong) NSString * title;
 @property(nonatomic,strong) NSString * excerpt;
+@property(nonatomic,strong) NSString * thumbnail;
+@property(nonatomic,strong) NSString * url;
+
 
 
 -(id)initWithDictionary:(NSDictionary *)dictionary;

@@ -11,6 +11,7 @@
 @implementation netra
 @synthesize title;
 @synthesize excerpt;
+@synthesize thumbnail;
 
 -(id) initWithDictionary:(NSDictionary *) dictionary
 {
@@ -20,6 +21,8 @@
         
         self.title        =[dictionary objectForKey:@"title"];
 		self.excerpt      =[dictionary objectForKey:@"excerpt"];
+		self.thumbnail      =[dictionary objectForKey:@"thumbnail"];
+		self.url      =[dictionary objectForKey:@"url"];
 	}
 	return self;
 }
