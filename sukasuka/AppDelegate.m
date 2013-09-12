@@ -14,11 +14,11 @@
 {
     self.controller1 = [[sukasukaViewController alloc] init];
     
-    UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:self.controller1];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.controller1];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController=nav;
+    self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
     
