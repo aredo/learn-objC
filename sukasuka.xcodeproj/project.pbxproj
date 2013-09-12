@@ -33,6 +33,8 @@
 		4AEF62F917CE0AA200F440A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF62F717CE0AA200F440A7 /* InfoPlist.strings */; };
 		4AEF62FC17CE0AA200F440A7 /* sukasukaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF62FB17CE0AA200F440A7 /* sukasukaTests.m */; };
 		4AEF630717CE0BF400F440A7 /* sukasukaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF630617CE0BF400F440A7 /* sukasukaViewController.m */; };
+		D0CCE95917E1CE7D001CCE6A /* netraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CCE95817E1CE7D001CCE6A /* netraCell.m */; };
+		D0CCE95C17E1D13A001CCE6A /* details.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CCE95B17E1D13A001CCE6A /* details.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		4AEF62FB17CE0AA200F440A7 /* sukasukaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sukasukaTests.m; sourceTree = "<group>"; };
 		4AEF630517CE0BF400F440A7 /* sukasukaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sukasukaViewController.h; sourceTree = "<group>"; };
 		4AEF630617CE0BF400F440A7 /* sukasukaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sukasukaViewController.m; sourceTree = "<group>"; };
+		D0CCE95717E1CE7C001CCE6A /* netraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netraCell.h; sourceTree = "<group>"; };
+		D0CCE95817E1CE7D001CCE6A /* netraCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netraCell.m; sourceTree = "<group>"; };
+		D0CCE95A17E1D13A001CCE6A /* details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = details.h; sourceTree = "<group>"; };
+		D0CCE95B17E1D13A001CCE6A /* details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = details.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,10 @@
 				4AEF62E617CE0AA100F440A7 /* Default-568h@2x.png */,
 				4AE19E8717D8578B001AB3DD /* netra.h */,
 				4AE19E8817D8578B001AB3DD /* netra.m */,
+				D0CCE95717E1CE7C001CCE6A /* netraCell.h */,
+				D0CCE95817E1CE7D001CCE6A /* netraCell.m */,
+				D0CCE95A17E1D13A001CCE6A /* details.h */,
+				D0CCE95B17E1D13A001CCE6A /* details.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -343,6 +353,8 @@
 				4A87593417D7479100AA7D9E /* AFXMLRequestOperation.m in Sources */,
 				4A87593517D7479100AA7D9E /* UIImageView+AFNetworking.m in Sources */,
 				4AE19E8917D8578B001AB3DD /* netra.m in Sources */,
+				D0CCE95917E1CE7D001CCE6A /* netraCell.m in Sources */,
+				D0CCE95C17E1D13A001CCE6A /* details.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
